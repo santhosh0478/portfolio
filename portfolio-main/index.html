@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        #tru{
+            margin:15px;
+            text-decoration: none;
+            border:1px solid #232323;
+            border-radius: 5px;;
+        }
+        #tru:hover{
+            color:rgb(68, 57, 139);
+        }
+    </style>
+</head>
+<body>
+    <aside id="thisisside">
+        <button onclick="closeaside()" class="closesidebar" id="closesidebar">Close</button>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">skills</a>
+        <a href="#contact">Contact</a>
+    </aside>
+    <header>
+        <a href="#" class="logo" >Santhosh</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">SKills</a>
+            <a href="#contact">Contact</a>
+            <button class="opensidebar" style="font-size:20px; margin-left:20px" onclick="openaside()">☰</button>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="home"  id="home">
+            <div class="home-content">
+                <h1>Hi, I'm<span>Santosh</span></h1>
+                <div class="text-animate">
+                    <h3>cognitive computing</h3>
+                </div><br>
+                <p>
+                    SRMIST,chennai
+                    <br>
+                    student(UG-2026)
+                    <br><br>
+                    santhu0478@gmail.com (mail)
+                    <br><br><br><br>
+                    <a href="index2.html" id="tru" alt="c">Certificates</a>
+                <pre>
+                    
+                    
+
+
+                </pre> 
+                </p>
+                <br><br>
+                <div class="btn-box">
+                    <!-- <a href="#" class="btn">Later</a> -->
+                    <a href="#contact" class="btn">Lets talk <pre class="pre"> &#8599;</pre></a>
+                </div>
+                <div class="wholelinks">
+                    <div class="linkedinimg">
+                        <a href="https://www.linkedin.com/in/santhosh-kumar-reddy-955b7b24b/">
+                            <img id="linkedinimg" src="linkedin-square-logo-24.png">Linkedin
+                        </a>
+                    </div>
+                    <div class="githubimg">
+                        <a id="githubhref" href="https://github.com/santhosh0478">
+                            <img id="githubimg" src="github-logo-24.png"> Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="profileimg">
+                <img  id="profileimg" src="photo.jpg">
+            </div>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="wholeprofile">
+
+                <img  id="wholeprofile" src="photo.jpg">
+            </div>
+        </section>
+
+        </section>
+        <section class="about" id="education">
+            <div class="ed5">
+                <h4 id="btech">M-tech :<br><br>[SRMIST,chennai]</h4>
+            <div class="content">
+                <h4>SEM-1</h4>
+                <button id="btn" onclick="openpopup()">check here</button>
+            </div>
+
+            <div class="popup" id="popup">
+                <h5>1st sem GPA:</h5>
+                <h2>7.5</h2>
+                <button id="btn2" onclick="closepopup()">OK</button>
+            </div>
+
+            <div class="content">
+                <br>
+                <h4>SEM-2</h4>
+                <button id="btn" onclick="openpopup2()">Check here</button>
+            </div>
+            <div class="popup2" id="popup2">
+                <h5>2nd sem GPA:</h5>
+                <h2>7.5</h2>
+                <button id="btn2" onclick="closepopup2()">OK</button>
+            </div>
+            </div>
+
+        </section>
+        <section class="about" id="skills">
+            
+            <div class="skillschild1">
+                <div class="s1">
+                    <img src="html.png" alt="html"></img>
+                </div>
+                <div class="s1">
+                    <img src="css.png" alt="css"></img>
+                </div>
+                <div class="s1">
+                    <img src="javascript.png" alt="js"></img>
+                </div>
+                <div class="s1">
+                    <img src="git.png" alt="git"></img>
+                </div>
+                <div class="s1">
+                    <img src="react.png" alt="react"></img>
+                </div>
+                <div class="s1">
+                    <box-icon name='react' type='logo' animation='tada' color='#ffffff' ></box-icon>
+                </div>
+            </div>
+            <div class="skillchild2">
+                <h2>
+                    Proficient in HTML, CSS, and JavaScript, I bring creativity and interactivity to web design.
+                     With a strong foundation in data structures and Git, I ensure efficient and organized code management. 
+                     Additionally, my expertise extends to React, allowing me to build dynamic, user-friendly web applications. 
+                     
+                </h2>
+            </div>
+        </section>
+        <section class="about" id="contact">
+            <div class="contactform">
+                
+                <div class="right">
+                    <h5 id="formtexts">Contact form :</h5>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder=" your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="5" placeholder="your message"></textarea>
+                        <button id="btn3" type="submit">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <pre><p><b id="copyright" style="color: black;">©Copyright 2023 portfolio. All rights reserved    terms and conditions</b></p></pre>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzo7jme5P1sBL-YwTw3jIJShADOI3oJNq2CpmNSAPXr7z3Sc37vDlzfS9sp1_A--hcZ2w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message send!";
+                setTimeout(function(){
+                    msg.innerHTML="";
+                },5);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
